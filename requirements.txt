@@ -1,0 +1,7 @@
+flask
+Flask-API
+gunicorn
+requests
+redis
+redis_decorator
+pytest
