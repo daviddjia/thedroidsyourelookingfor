@@ -20,3 +20,7 @@ def characters():
         abort(400)
     return jsonify(star_wars_api.get_characters_by_film(
         request.json['film_id']))
+
+@app.route('/films/id/<int:film_id>/characters', methods=['GET'])
+def characters2(film_id):
+    return jsonify(star_wars_api.get_characters_by_film(film_id))
